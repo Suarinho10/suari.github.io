@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tetori Roz – Ndërgjegjësimi për Kancerin e Gjirit</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --pink: #ff7eb9;
+  --dark-pink: #d1498f;
+  --green: #06d6a0;
+  --yellow: #ffd166;
+  --gray: #f7f7f7;
+  --text-dark: #333;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { font-family:'Poppins',sans-serif; background:#fff0f5; color:var(--text-dark); }
+header {
+  position:sticky; top:0; z-index:100;
+  background:linear-gradient(135deg,var(--pink),var(--dark-pink));
+  color:white; text-align:center; padding:2rem 1rem;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+header h1 { font-size:2.8rem; text-shadow:2px 2px 5px rgba(0,0,0,0.2); }
+header p { margin-top:0.5rem; font-size:1.1rem; }
+nav {
+  display:flex; justify-content:center; gap:1rem;
+  background:white; padding:0.8rem; position:sticky; top:0; z-index:99;
+  border-bottom:3px solid var(--pink);
+}
+nav a {
+  color:var(--dark-pink); text-decoration:none; font-weight:600; cursor:pointer;
+  transition:0.3s;
+}
+nav a:hover { color:var(--pink); }
+section {
+  min-height:90vh; padding:3rem 1rem;
+  display:flex; flex-direction:column; align-items:center; justify-content:flex-start;
+  text-align:center; margin:2rem auto; border-radius:1rem; max-width:1100px; color:white;
+}
+section h2 { font-size:2rem; margin-bottom:1rem; text-shadow:1px 1px 4px rgba(0,0,0,0.3); }
+section p { font-size:1rem; line-height:1.6; margin-bottom:1rem; }
+section img { width:100%; max-width:600px; border-radius:0.8rem; margin:1rem 0; object-fit:cover; box-shadow:0 4px 12px rgba(0,0,0,0.3); }
+.hero { background:linear-gradient(135deg,#ffe0eb,#ffb3d9); }
+.rreth { background:linear-gradient(135deg,#ff89b5,#d1498f); }
+.edukim { background:linear-gradient(135deg,#ffd166,#ff9f1c); }
+.kuiz { background:linear-gradient(135deg,#06d6a0,#1b9aaa); }
+.histori { background:linear-gradient(135deg,#a16eff,#b5a4ff); }
+.angazhohu { background:linear-gradient(135deg,#ff6363,#ffb3b3); }
+.quiz button {
+  padding:0.5rem 1rem; margin:0.5rem; border:none; border-radius:0.4rem;
+  background:var(--pink); color:white; cursor:pointer; font-weight:600; transition:0.3s;
+}
+.quiz button:hover { background:var(--dark-pink); }
+.rezultati { font-weight:bold; margin-top:0.8rem; font-size:1.1rem; }
+.cards {
+  display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1.5rem;
+}
+.card {
+  background:rgba(255,255,255,0.1); padding:1rem; border-radius:0.8rem;
+  flex:1 1 250px; max-width:250px; backdrop-filter:blur(6px);
+  transition:0.3s; cursor:pointer;
+}
+.card:hover { transform:scale(1.05); }
+.card img { width:100%; border-radius:0.5rem; margin-bottom:0.5rem; }
+.card p { font-size:0.95rem; color:white; }
+footer {
+  text-align:center; padding:1.5rem; background:linear-gradient(135deg,var(--dark-pink),var(--pink));
+  color:white; font-weight:600;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Tetori Roz</h1>
+<p>Bashkë luftojmë, bashkë shërohemi 💗</p>
+</header>
+
+<nav>
+<a onclick="scrollToSection('hero')">Kryefaqja</a>
+<a onclick="scrollToSection('rreth')">Rreth</a>
+<a onclick="scrollToSection('edukim')">Edukimi</a>
+<a onclick="scrollToSection('kuiz')">Kuizet</a>
+<a onclick="scrollToSection('histori')">Histori</a>
+<a onclick="scrollToSection('angazhohu')">Angazhohu</a>
+</nav>
+
+<section id="hero" class="hero">
+<h2>Mos harro të kontrollohesh!</h2>
+<img src="https://images.pexels.com/photos/3825529/pexels-photo-3825529.jpeg" alt="Pink Ribbons Awareness">
+<p>Tetori Roz është muaji i ndërgjegjësimit për kancerin e gjirit. Kontrolli i rregullt mund të shpëtojë jetë.</p>
+<p>Mësimi i simptomave, vizita te mjeku dhe auto-kontrolli janë hapa jetësorë.</p>
+<p>Rritja e ndërgjegjësimit ndihmon komunitetin të kuptojë rëndësinë e parandalimit dhe diagnostikimit të hershëm.</p>
+</section>
+
+<section id="rreth" class="rreth">
+<h2>Rreth Tetorit Roz</h2>
+<img src="https://images.pexels.com/photos/5211430/pexels-photo-5211430.jpeg" alt="Hands holding pink ribbons">
+<p>Tetori Roz është një fushatë ndërkombëtare për të rritur ndërgjegjësimin për kancerin e gjirit.</p>
+<p>Fjongoja roz simbolizon shpresën, unitetin dhe forcën. Çdo vit, miliona njerëz marrin pjesë në evente sensibilizuese dhe dhurime për kërkime shkencore.</p>
+<img src="https://www.svgheart.com/wp-content/uploads/2023/09/breast-cancer-ribbon-01_314-430-min.png"alt="Group in pink shirts">
+<p>Qëllimi kryesor është parandalimi, edukimi dhe mbështetja e pacientëve dhe familjeve të tyre.</p>
+</section>
+
+<section id="edukim" class="edukim">
+<h2>Edukimi dhe Parandalimi</h2>
+<img src=https://images.pexels.com/photos/5211430/pexels-photo-5211430.jpeg alt="Doctor holding pink ribbon">
+<p>Kanceri i gjirit prek miliona njerëz çdo vit. Edukimi mbi simptomat, diagnostikimin dhe parandalimin është thelbësor.</p>
+<p>Simptomat përfshijnë –</p>
+<ul style="text-align:left; color:white; max-width:800px; margin:0 auto 1rem;">
+<li>Ndryshime në madhësinë ose formën e gjirit</li>
+<li>Masa ose mpiksje në gjirin ose në sqepthithë</li>
+<li>Dhimbje të pazakontë në gjinj ose sqepthithë</li>
+<li>Ndryshime në lëkurën e gjirit: skuqje, tkurje ose lëkurë si portokalli</li>
+<li>Shkarkime nga sqepthithja (jo gjatë lindjes ose ushqyerjes)</li>
+</ul>
+<p>Parandalimi përfshin –</p>
+<ul style="text-align:left; color:white; max-width:800px; margin:0 auto 1rem;">
+<li>Auto-kontroll i gjirit çdo muaj</li>
+<li>Mamografi çdo dy vjet pas moshës 40 vjeç</li>
+<li>Ushtrime të rregullta dhe dietë të balancuar</li>
+<li>Shmangia e duhanit dhe konsumit të tepruar të alkoolit</li>
+</ul>
+<img src="https://njdsportsinjuries.co.uk/wp-content/uploads/2021/04/NJD-web-137.jpg"alt="Woman Exercising with Pink Ribbon">
+<p>Ushtrimet dhe aktiviteti fizik përmirësojnë shëndetin dhe ndihmojnë në parandalimin. Mbështetuni në komunitet dhe edukohuni.</p>
+</section>
+
+<section id="kuiz" class="kuiz">
+<h2>Kuizet e Ndërgjegjësimit</h2>
+
+<div class="quiz">
+<p><strong>1.</strong> A mund të preken meshkujt nga kanceri i gjirit?</p>
+<button onclick="kontrollo(this,true)">Po</button>
+<button onclick="kontrollo(this,false)">Jo</button>
+<p class="rezultati"></p>
+</div>
+
+<div class="quiz">
+<p><strong>2.</strong> Sa shpesh duhet të bëhet auto-kontrolli i gjirit?</p>
+<button onclick="kontrollo(this,true)">Një herë në muaj</button>
+<button onclick="kontrollo(this,false)">Një herë në vit</button>
+<p class="rezultati"></p>
+</div>
+
+<div class="quiz">
+<p><strong>3.</strong> A ndihmon dieta e shëndetshme dhe ushtrimi në parandalimin e kancerit?</p>
+<button onclick="kontrollo(this,true)">Po</button>
+<button onclick="kontrollo(this,false)">Jo</button>
+<p class="rezultati"></p>
+</div>
+
+<div class="quiz">
+<p><strong>4.</strong> Sa shpesh rekomandohet mamografia për gratë mbi 40 vjeç?</p>
+<button onclick="kontrollo(this,true)">Një herë në dy vjet</button>
+<button onclick="kontrollo(this,false)">Një herë në muaj</button>
+<p class="rezultati"></p>
+</div>
+
+<div class="quiz">
+<p><strong>5.</strong> Çfarë simbolizon fjongoja roz?</p>
+<button onclick="kontrollo(this,true)">Shpresë, forcë dhe unitet</button>
+<button onclick="kontrollo(this,false)">Vetëm stil mode</button>
+<p class="rezultati"></p>
+</div>
+
+</section>
+
+<section id="histori" class="histori">
+<h2>Histori Shprese</h2>
+<div class="cards">
+<div class="card">
+<img src="https://ih1.redbubble.net/image.2782873262.9638/farp%2Csmall%2Cwall_texture%2Cproduct%2C750x1000.jpg" alt="Anna Survivor">
+<p>"Kur e mësova, u frikësova. Por sot jam më e fortë." — Anna</p>
+</div>
+<div class="card">
+<img src="https://images.pexels.com/photos/5211430/pexels-photo-5211430.jpeg" alt="Maria Support">
+<p>"Mbështetja e komunitetit më bëri të guxoj." — Maria</p>
+</div>
+<div class="card">
+<img src="https://content.govdelivery.com/attachments/fancy_images/HIKAUAICOUNTY/2023/09/8246530/october-3_original.jpg"alt="Elena March">
+<p>"Fshati ynë organizoi evente sensibilizuese. Të tjerët morën mesazhin." — </p>
+</div>
+<div class="card">
+<img src="https://images.pexels.com/photos/3775168/pexels-photo-3775168.jpeg" alt="Lily Education">
+<p>"Mësova rëndësinë e kontrollit të hershëm. Nuk është kurrë vonë për të vepruar." </p>
+</div>
+<div class="card">
+<img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltf1887bc39a1be470/6668da58759c443ec9553fe3/how-to-wear-pink-hero.jpg?auto=webp&q=70&width=3840"
+     alt="Sophia Hope">
+<p>"Tani angazhohem çdo vit në eventet e Tetorit Roz për të ndihmuar të tjerët." </p>
+</div>
+</div>
+</section>
+
+<section id="angazhohu" class="angazhohu">
+<h2>Angazhohu dhe Ndihmo</h2>
+<img src="https://www.asef-asso.fr/wp-content/uploads/2022/09/iStock-1035269392-1024x683.jpg"alt="Support Hands Pink">
+<p>Merr pjesë në evente sensibilizuese, dhuro për kërkime shkencore, ose vish roz për të treguar mbështetjen tënde. Çdo veprim ka rëndësi 💖</p>
+<p>Bëhu pjesë e komunitetit që shpërndan njohuri dhe shpresë. Organizoni evente lokale, seminare dhe aktivitete informuese.</p>
+<p>Angazhimi i çdo individi është çelësi i ndryshimit. Ndihmo që të shpëtohen jetë.</p>
+</section>
+
+<footer>
+<p>© 2025 Tetori Roz | Krijuar me 💗 për shpresë dhe edukim</p>
+</footer>
+
+<script>
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+function kontrollo(btn,po){
+  const r=btn.parentElement.querySelector('.rezultati');
+  if(po){ r.textContent='✅ Saktë!'; r.style.color='lime'; }
+  else{ r.textContent='❌ Jo saktë.'; r.style.color='red'; }
+}
+</script>
+
+</body>
+</html>
